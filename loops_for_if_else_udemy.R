@@ -30,3 +30,36 @@ for (n in 1:10) {
 ### Esse método do loop também funciona para as funções da família apply.
 
 sapply(1:10, function(x) {x + 1})
+
+# Condicionais if e else -------------------------------------------------------------------------------------------------------------------
+
+### Condicional: if = se
+
+for (ano in 2006:2018) {
+  if (ano < 2010) {
+    print("Década de 2000")
+  }
+  print(paste("Feliz", ano))
+}
+
+### Condicional: if else = se não
+
+for (ano in 2006:2018) {
+  if (ano < 2010) {
+  print("Década de 2000")
+  }
+  else (print("Década de 2010")) 
+  print(paste("Feliz", ano))
+}
+
+### Outra forma do else
+
+for (ano in 2006:2018) {
+  if (ano < 2010) {
+  print("Década de 2000")
+  }
+  else {
+    (print("Década de 2010")) 
+  }
+  print(paste("Feliz", ano))
+}
